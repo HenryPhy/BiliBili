@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/shop"
+        android:title="购物"
+        android:icon="@mipmap/shopping"
+        app:showAsAction="always"/>
+    <item android:id="@+id/game"
+        android:title="游戏"
+        android:icon="@mipmap/game"
+        app:showAsAction="always"/>
+    <item android:id="@+id/download"
+        android:title="下载"
+        android:icon="@mipmap/download"
+        app:showAsAction="always"/>
+    <item android:id="@+id/search"
+        android:title="搜索"
+        android:icon="@mipmap/search"
+        app:showAsAction="always"/>
+</menu>

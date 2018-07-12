@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/calllog_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="zhangsan"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/call_log_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calllog_name"
+        android:layout_alignStart="@+id/calllog_name"
+        android:layout_below="@+id/calllog_name"
+        android:text="13511667890" />
+
+    <TextView
+        android:id="@+id/call_log_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/call_log_number"
+        android:layout_alignEnd="@+id/calllog_name"
+        android:layout_alignRight="@+id/calllog_name"
+        android:text="2017/11/12 10:11:23" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/call_log_number"
+        android:layout_marginTop="10dp"
+        android:background="#7cf9c1" />
+
+</RelativeLayout>

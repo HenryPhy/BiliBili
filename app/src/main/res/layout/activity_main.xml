@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.zk1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="侧滑菜单：抽屉"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:background="@drawable/p_1"
+        android:text="抽屉的基本内容"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:background="@drawable/p_1"
+        android:textAllCaps="false"
+        android:text="仿照BiliBili页面"/>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bili_drawerlayout"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <!-- 代表中心部分的内容-->
+    <LinearLayout
+        android:id="@+id/bili_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bili_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f7495e"
+            app:navigationIcon="@mipmap/navigation"
+            app:logo="@mipmap/d_doge">
+        </android.support.v7.widget.Toolbar>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bilirv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <!-- 代表左边的抽屉的内容-->
+    <LinearLayout
+        android:id="@+id/bili_left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#ff6370"
+            >
+            <ImageView
+                android:id="@+id/left_drawer_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/d_doge"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/left_drawer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="狗"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_below="@+id/left_drawer_logo"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/left_drawer_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            android:onClick="onClick"
+            android:drawableLeft="@mipmap/icon_contact"/>
+        <Button
+            android:id="@+id/left_drawer_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通话记录"
+            android:onClick="onClick"
+            android:drawableLeft="@mipmap/icon_calllog"/>
+        <Button
+            android:id="@+id/left_drawer_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="菜谱"
+            android:onClick="onClick"
+            android:drawableLeft="@mipmap/icon_door"/>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>
